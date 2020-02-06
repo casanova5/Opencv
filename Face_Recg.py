@@ -11,9 +11,11 @@ while 3>2:
     print(facecord) #face k coordinate print hongey
     for (x1,y1,w,h) in facecord:
         cv2.rectangle(y,(x1,y1),(x1+w,y1+h),(0,100,100),5)  #BGR
+        '''
+        opening seperate window for face when recognised
         face_data=y[y1:y1+h,x1:x1+w]
         cv2.imshow('face',face_data)
-        cv2.imshow('eyed',eye)
+        '''
         
     cv2.imshow('class',y)
     
